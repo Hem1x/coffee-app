@@ -1,21 +1,8 @@
-import {
-  Platform,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import { StyleSheet } from 'react-native';
+import HomeScreen from './screens/HomeScreen';
 
 export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text>Hello</Text>
-    </SafeAreaView>
-  );
+  return <HomeScreen />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    paddingTop: Platform.OS === 'android' ? 25 : 0,
-  },
-});
+const styles = StyleSheet.create({});
